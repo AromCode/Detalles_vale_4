@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8f7ef">
+<title>Un jardín para Valeria 🌷</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="header"><a href="#">✿ jardín de pequeños detalles</a><span>cultivado con cariño ♡</span></header>
+<main>
+<section class="hero wrap">
+  <div>
+    <h1>Un jardín que<br><em>florece al tocarlo.</em></h1>
+    <p class="lead">Hola, Valeria. A veces, las cosas bonitas empiezan con un pequeño gesto. Toca las flores, descubre sus mensajes y disfruta el paseo. 🌼</p>
+    <a class="cta" href="#jardin">Entrar al jardín ↓</a>
+    <p class="small-note">P.D. Cada flor guarda una pequeña sorpresa.</p>
+  </div>
+  <div class="landscape" aria-hidden="true">
+    <div class="sun"></div><div class="cloud"></div><div class="hill"></div>
+    <span class="big-flower f1">✿</span><span class="big-flower f2">✿</span><span class="big-flower f3">✿</span>
+    <span class="butterfly-hero">🦋</span>
+  </div>
+</section>
+
+<section class="garden wrap" id="jardin">
+  <div class="section-head">
+    <div><p class="eyebrow">TU PEQUEÑO JARDÍN</p><h2>Hazlas florecer, <em>Valeria.</em></h2></div>
+  </div>
+  <div class="garden-panel">
+    <div class="status"><strong>● JARDÍN EN FLOR</strong><span id="counter">0 de 5 flores abiertas</span></div>
+    <div class="flower-bed">
+      <button class="flower-spot" data-flower="0" aria-label="Abrir flor 1"><span class="bloom pink"><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span><span class="stem"><i></i><b></b></span><span class="pot"></span><small>Flor de alegría</small></button>
+      <button class="flower-spot" data-flower="1" aria-label="Abrir flor 2"><span class="bloom lilac"><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span><span class="stem"><i></i><b></b></span><span class="pot"></span><small>Flor de calma</small></button>
+      <button class="flower-spot" data-flower="2" aria-label="Abrir flor 3"><span class="bloom yellow"><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span><span class="stem"><i></i><b></b></span><span class="pot"></span><small>Flor de sueños</small></button>
+      <button class="flower-spot" data-flower="3" aria-label="Abrir flor 4"><span class="bloom coral"><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span><span class="stem"><i></i><b></b></span><span class="pot"></span><small>Flor de sonrisas</small></button>
+      <button class="flower-spot" data-flower="4" aria-label="Abrir flor 5"><span class="bloom mauve"><i></i><i></i><i></i><i></i><i></i><i></i><b></b></span><span class="stem"><i></i><b></b></span><span class="pot"></span><small>Flor sorpresa</small></button>
+    </div>
+    <div class="garden-bottom"><span>✧ Un toque tuyo y algo bonito sucede.</span><button id="reset">Volver a empezar ↻</button></div>
+  </div>
+</section>
+
+<section class="note wrap">
+  <span class="note-flower">✿</span>
+  <div><p class="eyebrow">ANTES DE QUE TE VAYAS</p><h2>Que tu día tenga<br><em>muchas cosas bonitas.</em></h2>
+  <p>Y si hoy no todo sale como esperabas, recuerda que siempre puede aparecer una nueva flor en el camino.</p>
+  <strong>Con cariño, Arom ♡</strong></div>
+  <span class="note-butterfly">🦋</span>
+</section>
+</main>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="backdrop" data-close></div>
+  <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="close" id="close" aria-label="Cerrar">×</button>
+    <div class="modal-flower" id="modalFlower">✿</div>
+    <p class="eyebrow" id="category">UNA FLOR PARA TI</p>
+    <h2 id="modalTitle">¡Ha florecido!</h2><p id="message"></p>
+    <button class="okay" id="okay">Qué bonito ♡</button>
+  </section>
+</div>
+<div id="butterflies" aria-hidden="true"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
